@@ -1,0 +1,75 @@
+<app-header-component></app-header-component>
+
+<main class="container mt-4">
+  <!-- Title + Actions -->
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h3 class="mb-0">Gerenciar Usuarios</h3>
+
+    <button class="btn btn-success">+ Novo Usuario</button>
+  </div>
+
+  <!-- Search -->
+  <div class="card mb-3">
+    <div class="card-body">
+      <form class="d-flex gap-2" role="search">
+        <input
+          class="form-control"
+          type="search"
+          placeholder="Search users..."
+          aria-label="Search"
+        />
+
+        <button class="btn btn-outline-success">Search</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Users Table -->
+  <div class="card">
+    <div class="card-body p-0">
+      <table class="table table-hover table-borderless mb-0">
+        <thead class="table-light">
+          <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th class="text-end">Ações</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Markos Pontes</td>
+            <td>markos_pontes</td>
+            <td>markospontes@mdo.com</td>
+
+            <td class="text-end">
+              <button class="btn btn-sm btn-outline-secondary me-2">
+                Update
+              </button>
+
+              <button class="btn btn-sm btn-outline-danger">Delete</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>2</td>
+            <td>Markos Pontes</td>
+            <td>markos_pontes</td>
+            <td>markospontes@mdo.com</td>
+
+            <td class="text-end">
+              <button class="btn btn-sm btn-outline-secondary me-2">
+                Update
+              </button>
+
+              <button class="btn btn-sm btn-outline-danger">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</main>
