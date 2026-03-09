@@ -39,37 +39,25 @@
         </thead>
 
         <tbody>
-          <tr>
-            <td>1</td>
-            <td>Markos Pontes</td>
-            <td>markos_pontes</td>
-            <td>markospontes@mdo.com</td>
+          @for (usuario of usuarios; track usuario.id) {
+            <tr>
+              <td>{{ usuario.id }}</td>
+              <td>{{ usuario.nome }}</td>
+              <td>{{ usuario.login }}</td>
+              <td>{{ usuario.email }}</td>
 
-            <td class="text-end">
-              <button class="btn btn-sm btn-outline-secondary me-2">
-                Update
-              </button>
+              <td class="text-end">
+                <button class="btn btn-sm btn-outline-secondary me-2">
+                  Update
+                </button>
 
-              <button class="btn btn-sm btn-outline-danger">Delete</button>
-            </td>
-          </tr>
-
-          <tr>
-            <td>2</td>
-            <td>Markos Pontes</td>
-            <td>markos_pontes</td>
-            <td>markospontes@mdo.com</td>
-
-            <td class="text-end">
-              <button class="btn btn-sm btn-outline-secondary me-2">
-                Update
-              </button>
-
-              <button class="btn btn-sm btn-outline-danger">Delete</button>
-            </td>
-          </tr>
+                <button class="btn btn-sm btn-outline-danger">Delete</button>
+              </td>
+            </tr>
+          }
         </tbody>
       </table>
     </div>
   </div>
+  <p>Total usuarios: {{ usuarios.length }}</p>
 </main>
